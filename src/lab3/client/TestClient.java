@@ -38,7 +38,7 @@ public class TestClient implements Runnable{
         //Since this is being tested on a localhost we can't send from the same socket 
         //as we the one we are sending to
         try (DatagramSocket socket = new DatagramSocket(5000)) {
-             InetAddress ip = InetAddress.getLocalHost(); 
+             InetAddress ip = InetAddress.getLocalHost();    
         	 while (true) 
              { 
                  String inp = sc.nextLine();
